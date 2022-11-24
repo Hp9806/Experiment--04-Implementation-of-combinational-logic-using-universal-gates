@@ -29,29 +29,23 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 ## Logic Diagram
 ## Procedure
 ## Program:
-
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-```
-Developed by: s.harish kumar
-RegisterNumber:  212221230104
-```
 
+Developed by: s.Harish Kumar.
 
-## QUESTION 01
+RegisterNumber:  212221230104.
 ```
 USING NAND
-module comblogic(A,B,C,D,F);
-input A,B,C,D;
+module comblogic(a,b,c,d,f);
+input a,b,c,d;
 output F;
-wire P,Q,R;
-assign P = (~C&~B&~A);
-assign Q = (~D&~C&~A);
-assign R = (C&~(~B)&~A);
-assign F= P&~Q&~R;
+wire f1,f2,f3;
+assign f1 = (~c&~b&~a);
+assign f2 = (~d&~c&~a);
+assign f3 = (c&~(~b)&~a);
+assign F= f1&~f2&~f3;
 endmodule
-```
-## QUESTION 02
-```
+
 USING NOR
 module comblogic(a,b,c,d,f);
 input a,b,c,d;
@@ -65,23 +59,26 @@ not(F,f4);
 endmodule
 ```
 ## RTL realization
+## Output:
+### Program1:
+### RTL
+![comb1rtl](https://user-images.githubusercontent.com/94883876/192535032-6090395f-a761-419b-8f47-db35c144fa5c.jpg)
 
-# Output:
-### Question 01
-## RTL
-![Screenshot 2022-09-27 172921](https://user-images.githubusercontent.com/94154531/192554343-a1b03213-2d28-4450-af8d-e9164302a518.jpg)
-## Timing Diagram
+### Timing Diagram
+![comb1time](https://user-images.githubusercontent.com/94883876/192535193-39b71bae-4cdd-4d09-ac07-97dc3e49ebd0.jpg)
 
-![192535468-14cf07df-60f1-4b71-95d3-49535ba9f8f4](https://user-images.githubusercontent.com/94154531/192554616-b78d70a9-1935-4cd7-ab70-74db16bd9119.jpg)
-## Truth Table
-![192535507-5e25c1ef-6654-4cb3-af31-6e25f0c794ce](https://user-images.githubusercontent.com/94154531/192554763-1ea93e07-8759-4510-b470-f91da6b2024a.jpg)
-# Question 02
-## RTL
-![192535367-31b82494-58f7-47df-aa80-0e72ebac4292](https://user-images.githubusercontent.com/94154531/192555341-d59784d9-f063-4cad-b783-059590b9d61f.jpg)
-## Timing diagram
-![192535468-14cf07df-60f1-4b71-95d3-49535ba9f8f4](https://user-images.githubusercontent.com/94154531/192555479-7ce3ea8a-e56f-4f35-ae19-8c6474e42811.jpg)
-## Truth Table
-![192535507-5e25c1ef-6654-4cb3-af31-6e25f0c794ce](https://user-images.githubusercontent.com/94154531/192555595-3479b8d9-295c-4f04-a109-b17ae45355ac.jpg)
+### Truth Table
+![comb1tru](https://user-images.githubusercontent.com/94883876/192582506-99a83124-b569-4883-9d03-cb49f8b0b205.jpg)
+
+### Program2:
+### RTL
+![comb2rtl](https://user-images.githubusercontent.com/94883876/192535367-31b82494-58f7-47df-aa80-0e72ebac4292.jpg)
+
+### Timing Diagram
+![comb2time](https://user-images.githubusercontent.com/94883876/192535468-14cf07df-60f1-4b71-95d3-49535ba9f8f4.jpeg)
+
+### Truth Table
+![comb2tru](https://user-images.githubusercontent.com/94883876/192582415-ed7da75b-fd58-4724-bd86-fef6271d7e00.jpg)
 
 
 ## Result:
